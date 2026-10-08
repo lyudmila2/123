@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Неоновый мир</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #0a0a1a;
+        font-family: 'Segoe UI', sans-serif;
+      }
+      h1 {
+        color: #00ffff;
+        font-size: 4em;
+        text-shadow: 0 0 10px #00ffff, 0 0 30px #00ffff, 0 0 60px #ff00ff;
+        animation: glow 2s ease-in-out infinite alternate;
+      }
+      @keyframes glow {
+        from { text-shadow: 0 0 10px #00ffff, 0 0 30px #00ffff; }
+        to   { text-shadow: 0 0 20px #ff00ff, 0 0 60px #ff00ff, 0 0 90px #ff00ff; }
+      }
+      img {
+        width: 200px;
+        margin-top: 30px;
+        border-radius: 20px;
+        box-shadow: 0 0 25px #00ffff;
+        transition: transform 0.4s;
+      }
+      img:hover {
+        transform: scale(1.1) rotate(3deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Привет мир</h1>
+    <a href="https://rb.asu.ru" target="_blank">
+      <img src="https://rb.asu.ru/public/design/images/logotype/logoRI-2017.png" alt="Логотип">
+    </a>
+  </body>
+</html>
